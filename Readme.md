@@ -12,7 +12,7 @@ If we consider just the Identification stage, playbooks are going to be more ess
 - What could it mean, and does this event demonstrate that? (essentially False Positives/True Positives)
 - What else would we expect to observe, and how might we find that?
 
-I believe there's room for improvement on the ATC project by incorporating some of the ideas from Mitre ATT&CK - ultimately we want analysts to be able to come to an incident without any prior knowledge or experience and not only know *what* to do, but have the context of *why* they're doing it.
+I believe there's room for improvement on the ATC project such as incorporating some of the ideas from Mitre ATT&CK - ultimately we want analysts to be able to come to an incident without any prior knowledge or experience and not only know *what* to do, but have the context of *why* they're doing it as well as be able to contextualise the bigger picture to tell the whole story.
 
 
 ## Initial ideas
