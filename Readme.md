@@ -19,18 +19,16 @@ I believe there's room for improvement on the ATC project such as incorporating 
 ## Initial ideas
 
 
-- To split apart Playbooks into seperate files based on stages (perhaps this could just be how the Markdown files are generated)
+- To split apart or make it easy to split Playbooks into seperate files based on stages (perhaps this could just be how the Markdown files are generated). Because Playbooks currently comprise of the full IR stages, it can quickly become unweildy and hard to follow.
 
-- For every response action, add a "Look for xyz" - based on information such as what is in Mitre ATT&CK or the original reports. Often it isn't enough to simply 
-say "Find destination IPs" without the context of what should or shouldn't stand out as of interest.
+- For every response action, add some context of how to use it, e.g. "Look for xyz". This could be based on information such as what is in Mitre ATT&CK or the original reports. Often it isn't enough to simply say "Find destination IPs" without the context of what should or shouldn't stand out as of interest for that use-case.
 
 - Seperating Response Actions from the 'how' such as searches, scripts etc. Instead, those searches and scripts reference the Response Action(s) that they apply to.
 
-- Have a 1-1 Relationship between Playbooks and Mitre ATT&CK Techniques
+- Have a 1-1 Relationship between Playbooks and Mitre ATT&CK Techniques. At the moment it doesn't seem clear what drives the requirement for playbooks.
 
-- Use the Mitre ATT&CK Flow concept so that each Playbook has relationships between other related techniques that might have been observed before or after. The idea 
-is that an event is unlikely to happen in isolation. 
+- Use the Mitre ATT&CK Flow concept so that each Playbook has relationships between other related techniques that might have been observed before or after. The idea is that an event is unlikely to happen in isolation and should be seen as part of a chain that needs understanding. 
 
-- Chaining playbooks to allow a full picture of an incident can be scaled up and down based on the severity/confidence of the initial event. 
-For example, a firing for a Phishing email that you discover was blocked wouldn't warrant checking the next stage which might be code execution and onwards.
+- Chaining playbooks to allow a full picture of an incident which can be scaled up and down based on the severity/confidence of the initial event. 
+For example, a firing for a Phishing email that you discover was blocked wouldn't warrant checking the next stage which might be code execution and onwards, or you might not have a high degree of confidence that it is a true positive, by looking at what would likely happen after or have happened before, you may be able to support a conclusion.
 
