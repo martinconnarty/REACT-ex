@@ -20,6 +20,8 @@ If we consider just the Identification stage, playbooks are going to be more ess
 - For every response action, add a "Look for xyz" - based on information such as what is in Mitre ATT&CK or the original reports. Often it isn't enough to simply 
 say "Find destination IPs" without the context of what should or shouldn't stand out as of interest.
 
+- Seperating Response Actions from the 'how' such as searches, scripts etc. Instead, those searches and scripts reference the Response Action(s) that they apply to.
+
 - Have a 1-1 Relationship between Playbooks and Mitre ATT&CK Techniques
 
 - Use the Mitre ATT&CK Flow concept so that each Playbook has relationships between other related techniques that might have been observed before or after. The idea 
@@ -27,3 +29,4 @@ is that an event is unlikely to happen in isolation.
 
 - Chaining playbooks to allow a full picture of an incident can be scaled up and down based on the severity/confidence of the initial event. 
 For example, a firing for a Phishing email that you discover was blocked wouldn't warrant checking the next stage which might be code execution and onwards.
+
