@@ -2,7 +2,8 @@
 
 ## Background:
 
-This is an experimental project to see if I can extend the ATC RE&CT Playbook & Response actions to add some functionality/useability.
+This is an experimental project to see if I can extend or improve the ATC RE&CT Playbook & Response actions to add some functionality/useability.
+
 
 With more and more Security Tools, things to monitor, and threats to protect against, the amount of potential use-cases in a SOC is growing.
 If we consider just the Identification stage, playbooks are going to be more essential for analysts to be able to understand things like:
@@ -10,6 +11,8 @@ If we consider just the Identification stage, playbooks are going to be more ess
 - What has fired, and why? 
 - What could it mean, and does this event demonstrate that? (essentially False Positives/True Positives)
 - What else would we expect to observe, and how might we find that?
+
+I believe there's room for improvement on the ATC project by incorporating some of the ideas from Mitre ATT&CK - ultimately we want analysts to be able to come to an incident without any prior knowledge or experience and not only know **what** to do, but have the context of **why** they're doing it.
 
 
 ## Initial ideas
