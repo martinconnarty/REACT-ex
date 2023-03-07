@@ -1,5 +1,5 @@
-title: RA_2202_collect_email_message:outlook 
-id: RA2202_outlook_1
+title: RA_2202_collect_email_message:microsoft 365 powershell 
+id: RA2202_microsoft365_1
 description: Collect an email message using microsoft 365
 author: 'martin connarty"
 creation_date: 2023/03/07
