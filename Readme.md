@@ -5,7 +5,8 @@
 This is an experimental project to see if I can extend or improve the ATC RE&CT Playbook & Response actions to add some functionality/useability.
 
 
-With more and more Security Tools, things to monitor, and threats to protect against, the amount of potential use-cases in a SOC is growing.
+With more and more Security Tools, things to monitor, and threats to protect against, the amount of potential use-cases in a SOC is growing and analysts are more likely to come to investigate an event without a solid understanding of what the detection represents.
+
 If we consider just the Identification stage, playbooks are going to be more essential for analysts to be able to understand things like:
 
 - What has fired, and why? 
