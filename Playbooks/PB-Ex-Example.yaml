@@ -1,0 +1,42 @@
+- title: RP:Hijack Execution Flow:DLL Search Order Hijacking
+id: RP_1574_001
+description: >
+  The Playbook you can use for DLL Search Order Hijacking
+author: your name/nickname/twitter
+creation_date: YYYY/MM/DD
+severity: M                  # L M H
+tlp: AMBER                   # WHITE GREEN AMBER RED
+pap: WHITE                   # WHITE GREEN AMBER RED
+tags:
+    - attack.persistence     # use the next tag scheme for ATT&CK tags: https://github.com/Neo23x0/sigma/wiki/Tags
+     - attack.t1574.001            # use the next tag scheeme for ATT&CK tags: https://github.com/Neo23x0/sigma/wiki/Tags
+    - DLL Search Order Hijacking                # could be custom tags as well
+pre_rp:
+  - RA_000         # related RP that correspond to techniques you might see that caused this 
+linked_rp:
+  - RA_0000         # related RP that corresponds to techniques you are likely to see at the same time as this  
+post_rp:
+  - RA_000           # related RP that corresponds to other techniques caused by this technique
+references: 
+  - https://example.com
+preparation:
+  - id: RA_1008_make_sure_there_are_backups.yml
+    guide: This threat often leads to Ransomware or data destruction
+identification:
+  - id: RA_2403_find_process_by_executable_metadata
+    guide: Look for some signs that this has ran previously, for this technique you would expect to see xyz
+  - id: RA_2306_find_file_by_path
+    guide: Usually this threat will be found in this location xyz or abc
+containment:
+  - RA_0006_block_domain_on_email         # Response Actions could be aggregated 
+  - RA_0009_block_url_on_proxy            # and contain links to multiple Response Actions
+eradication:
+  - RA_0010_delete_malicious_emails
+recovery:
+  - RA_0029_reinstall_host_from_golden_image
+lessons_learned:
+  - RA_0013_develop_incident_report
+workflow: |
+    Description of the workflow in the [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) format. 
+    You can put here anything you want, i.e. specific conditions/requirements or details on the order of Response Actions execution. 
+    Here newlines will be saved.
