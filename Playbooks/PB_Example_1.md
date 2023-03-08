@@ -21,7 +21,7 @@
 - WHITE  
 
 ## Links
-- (https://attack.mitre.org/techniques/T1574/001/)[https://attack.mitre.org/techniques/T1574/001/]
+- [https://attack.mitre.org/techniques/T1574/001/](https://attack.mitre.org/techniques/T1574/001/)
 
 ## Background: (taken from Mitre ATT&CK)
 
@@ -41,6 +41,6 @@ If a search order-vulnerable program is configured to run at a higher privilege 
     
 ## Likely Techniques leading to this
 
-- (PB_Example_2.md)[PB_Example_2.md]
+- [PB_Example_2.md](PB_Example_2.md)
 
 ## Likely Techniques seen after this
