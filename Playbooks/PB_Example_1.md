@@ -3,22 +3,13 @@
 ## ID
 - RP_1574_001
 
-## Tags
-- T1574
-
-## author
-- Martin Connarty
-## creation_date
-- 2023/03/08
-
-## Severity
-- M 
-
-## tlp
-- AMBER 
-
-## pap
-- WHITE  
+|   |   | 
+|---|---|
+| Author | Martin Connarty |
+| Created Date | 2023/03/08 |
+| Severity | M |
+| TLP | AMBER |
+| PAP | WHITE |
 
 ## Links
 - [https://attack.mitre.org/techniques/T1574/001/](https://attack.mitre.org/techniques/T1574/001/)
