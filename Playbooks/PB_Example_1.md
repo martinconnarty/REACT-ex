@@ -35,10 +35,17 @@ If a search order-vulnerable program is configured to run at a higher privilege 
     
 ## Identification:
    
-- When looking at this, your goal is to verify this has occured, understand what is potentially being hijacked and is it even vulnerable to DLL Search Order hijacking? (RA_80004_Testing_DLL_Hijacking) , and then to identify the DLL file that was loaded (RA_20001_Identify_File), understand it and triage it (RA_20002_Triage_Binary) and if necessary analyse it (RA_20003_Analyse_Binary). 
-- Can you identify how the DLL was initially placed there? Look at the identification steps on RP_1059_Command_and_Scripting or RP_1024_User_Execution
-- Can you identify whether or not it succeeded? If you have done some analysis on the binary you may have network indicators, or you may be able to look for unusual behaviour for the targetted Exe. (RA_20004_Check_Network_Logs)
-    
+When looking at this, your goal is to first verify the detection has worked accurately, then understand what is potentially being hijacked, the effect of hijacking it, and also to understand the DLL that has been loaded.
+
+- Review the detection logic and confirm it has worked as designed [RP_2000_Understand_Detection_Logic](RP_2000_Understand_Detection_Logic)
+- Try to gather details of the DLL file that was loaded 
+    - [RA_20001_Gather_File_details](RA_20001_Gather_File_details)
+- Understand the DLL and triage the file [RA_20002_Triage_Binary](RA_20002_Triage_Binary) and if necessary analyse it [RA_20003_Analyse_Binary](RA_20003_Analyse_Binary). 
+- Look for suspicious behaviour from the hijacked executable based on what you've learned about the DLL or what you know about normal use for that executable. E.g. commands, processes or network connections you might not expect.
+    - [RA_20006_Check_Child_Commands](RA_20006_Check_Child_Commands)
+    - [RA_20006_Check_Child_Processes](RA_20006_Check_Child_Processes)
+    - [RA_20006_Check_Process_Network](RA_20006_Check_Process_Network)
+
 ## Likely Techniques leading to this
 
 - [PB_Example_2.md](PB_Example_2.md)
