@@ -22,7 +22,7 @@ Ultimately we want analysts to be able to come to an incident without any prior 
 
 - To split apart or make it easy to split Playbooks into seperate files based on stages (perhaps this could just be how the Markdown files are generated). Because Playbooks currently comprise of all the full stages, it can quickly become unweildy with many different Response actions and becomes hard to follow.
 
-- For every response action, add some context of how to use it, e.g. "Look for xyz". This could be based on information such as what is in Mitre ATT&CK or the original reports. Often it isn't enough to simply say "Find destination IPs" without the context of what should or shouldn't stand out as of interest for that use-case. I appreciate that at the moment there is a Markdown 'Workflow' section that could satisfy that - so it might be that making good use of that satisfies this.
+- For every response action, add some context of how to use it, e.g. "Look for xyz". This could be based on information such as what is in Mitre ATT&CK or the original reports. Often it isn't enough to simply say "Find destination IPs" without the context of what should or shouldn't stand out as of interest for that use-case. I appreciate that at the moment there is a Markdown 'Workflow' section that could satisfy that if used well. They key point is having the context alongside the actions.
 
 - Seperating Response Actions from the 'how' such as searches, scripts etc. Instead, those searches and scripts reference the Response Action(s) that they apply to.
 
