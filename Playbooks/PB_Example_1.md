@@ -36,10 +36,8 @@ When looking at this, your goal is to first verify the detection has worked accu
 ### Common sources of false positives
 - Microsoft's xyz tool will often do this - you can identify it by looking for the parent process being abc
 
-
-
-## Likely Techniques leading to this
+### Likely Techniques leading to this
 
 - [PB_Example_2.md](PB_Example_2.md)
 
-## Likely Techniques seen after this
+### Likely Techniques seen after this
