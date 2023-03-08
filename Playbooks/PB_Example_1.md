@@ -33,6 +33,10 @@ When looking at this, your goal is to first verify the detection has worked accu
     - [RA_20006_Check_Child_Commands](RA_20006_Check_Child_Commands)
     - [RA_20006_Check_Child_Processes](RA_20006_Check_Child_Processes)
     - [RA_20006_Check_Process_Network](RA_20006_Check_Process_Network)
+### Common sources of false positives
+- Microsoft's xyz tool will often do this - you can identify it by looking for the parent process being abc
+
+
 
 ## Likely Techniques leading to this
 
