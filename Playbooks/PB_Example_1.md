@@ -23,7 +23,7 @@
 ## Links
 - (https://attack.mitre.org/techniques/T1574/001/)[https://attack.mitre.org/techniques/T1574/001/]
 
-## Background: (taken from Mitre ATT&CK) This technique is used to cause a legitimate binary to execute malicious code. 
+## Background: (taken from Mitre ATT&CK)
 
 Adversaries may execute their own malicious payloads by hijacking the search order used to load DLLs. Windows systems use a common method to look for required DLLs to load into a program. [1][2] Hijacking DLL loads may be for the purpose of establishing persistence as well as elevating privileges and/or evading restrictions on file execution.
 
