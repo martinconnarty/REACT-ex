@@ -1,0 +1,48 @@
+- title: RP:Hijack Execution Flow:DLL Search Order Hijacking
+id: RP_1574_001
+description: >
+  The Playbook you can use for DLL Search Order Hijacking
+author: your name/nickname/twitter
+creation_date: YYYY/MM/DD
+severity: M                  # L M H
+tlp: AMBER                   # WHITE GREEN AMBER RED
+pap: WHITE                   # WHITE GREEN AMBER RED
+tags:
+    - attack.persistence     # use the next tag scheme for ATT&CK tags: https://github.com/Neo23x0/sigma/wiki/Tags
+     - attack.t1574.001            # use the next tag scheeme for ATT&CK tags: https://github.com/Neo23x0/sigma/wiki/Tags
+    - DLL Search Order Hijacking                # could be custom tags as well
+pre_rp:
+  - RP_000         # related RP that correspond to techniques you might see that caused this 
+linked_rp:
+  - RP_0000         # related RP that corresponds to techniques you are likely to see at the same time as this  
+post_rp:
+  - RP_000           # related RP that corresponds to other techniques caused by this technique
+references: 
+  - https://example.com
+preparation:
+  - RA_1008_make_sure_there_are_backups
+  - RA_80004_Testing_DLL_Hijacking
+identification:
+  - RA_20001_Identify_File
+  - RA_20002_Triage_Binary
+  - RA_20003_Analyse_Binary
+  - RA_20004_Check_Network_Logs
+containment:
+  - RA_0006_block_domain_on_email         # Response Actions could be aggregated 
+  - RA_0009_block_url_on_proxy            # and contain links to multiple Response Actions
+eradication:
+  - RA_0010_delete_malicious_emails
+recovery:
+  - RA_0029_reinstall_host_from_golden_image
+lessons_learned:
+  - RA_0013_develop_incident_report
+workflow: |
+    ## Background: (taken from Mitre ATT&CK) This technique is used to cause a legitimate binary to execute malicious code. 
+    
+    ## Identification:
+    
+    - When looking at this, your goal is to verify this has occured, understand what is potentially being hijacked and is it even vulnerable to DLL Search Order hijacking? (RA_80004_Testing_DLL_Hijacking) , and then to identify the DLL file that was loaded (RA_20001_Identify_File), understand it and triage it (RA_20002_Triage_Binary) and if necessary analyse it (RA_20003_Analyse_Binary). 
+    - Can you identify how the DLL was initially placed there? Look at the identification steps on RP_1059_Command_and_Scripting or RP_1024_User_Execution
+    - Can you identify whether or not it succeeded? If you have done some analysis on the binary you may have network indicators, or you may be able to look for unusual behaviour for the targetted Exe. (RA_20004_Check_Network_Logs)
+    
+    
