@@ -39,5 +39,5 @@ Ultimately we want analysts to be able to come to an incident without any prior 
 For example, a firing for a Phishing email that you discover was blocked wouldn't warrant checking the next stage which might be code execution and onwards, or you might not have a high degree of confidence that it is a true positive, by looking at what would likely happen after or have happened before, you may be able to support a conclusion of false positive or identify further events.
 
 
-![image](https://user-images.githubusercontent.com/6506886/223656230-7a9c7234-64f5-4ef7-8df7-d209728f4eab.png)
+![image](Attack flow.png)
 
