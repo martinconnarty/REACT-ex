@@ -18,7 +18,7 @@ Ultimately we want analysts to be able to come to an incident without any prior 
 
 ##  Changelog
 
-- 2022-Mar-10 Worked on some Response Action and Method markdown and YAML files
+- 2022-Mar-09 Worked on some Response Action and Method markdown and YAML files
 - 2022-Mar-08 https://github.com/martinconnarty/REACT-ex/blob/main/Playbooks/PB_Example_1.md - Working on designing a simple to use playbook layout
 
 
