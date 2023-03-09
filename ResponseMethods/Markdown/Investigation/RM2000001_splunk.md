@@ -14,7 +14,7 @@
 
 Use Splunk to gather the file name from around the time
     
-## Manaul method
+## Manual method
 
 - If file name is unknown, look at the host in question at the time of the firing. The File name should be stored as 'FileName / File_Name'
 

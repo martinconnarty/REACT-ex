@@ -1,18 +1,19 @@
-title: RM2000001 - Get File Name - Splunk 
+title: RM2000001 - Get File Name - Splunk
 id: RM2000001_splunk
 description: Show a file name in Splunk
-author: 'martin connarty"
+author: martin connarty
 creation_date: 2023/03/07
 stage: identification
-references: 
-  - https://www.lifewire.com/save-an-email-as-an-eml-file-in-gmail-1171956
-  - https://eml.tooutlook.com/
-  
-manual: |
-  If file name is unknown, look at the host in question at the time of the firing. The File name should be stored as 'FileName / File_Name'
-  
-script: |
-  `Cim_Endpoint_Indexes` | eval File_Name=coalesce(File_Name, FileName) | table _time File_Name
-
-script: |
-  tstats count from datamodel=Endpoint by ....
+references:
+  - null
+manual: >
+  If file name is unknown, look at the host in question at the time of the
+  firing. The File name should be stored as 'FileName / File_Name'
+scripts:
+  - Get from CIM Endpoint model in splunk
+  - >
+    `Cim_Endpoint_Indexes` | eval File_Name=coalesce(File_Name, FileName) |
+    table _time File_Name
+  - Get from Data model in splunk
+  - >
+    | tstats count from datamodel=Endpoint by ....
