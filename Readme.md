@@ -16,9 +16,10 @@ I believe there's room for improvement on the ATC project such as incorporating 
 
 Ultimately we want analysts to be able to come to an incident without any prior knowledge or experience and not only know *what* to do, but have the context of *why* they're doing it as well as be able to contextualise the bigger picture to tell the whole story.
 
-## Latest Development work:
+##  Changelog
 
-- https://github.com/martinconnarty/REACT-ex/blob/main/Playbooks/PB_Example_1.md - Working on designing a simple to use playbook layout
+- 2022-Mar-09 Worked on some Response Action and Method markdown and YAML files
+- 2022-Mar-08 https://github.com/martinconnarty/REACT-ex/blob/main/Playbooks/PB_Example_1.md - Working on designing a simple to use playbook layout
 
 
 ## Initial ideas/thoughts
