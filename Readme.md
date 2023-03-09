@@ -2,7 +2,7 @@
 
 ## Background:
 
-This is an experimental project to see if I can extend or improve the ATC RE&CT Playbook & Response actions to add some functionality/useability.
+This is an experimental project to see if I can extend or improve the [ATC RE&CT](https://github.com/atc-project/atc-react) Playbook & Response actions to add some functionality/useability. 
 
 With more and more Security Tools, things to monitor, and threats to protect against, the amount of potential use-cases in a SOC is growing and analysts are more likely to come to investigate an event without a solid understanding of what the detection represents.
 
