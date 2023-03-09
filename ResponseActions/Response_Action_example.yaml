@@ -1,22 +1,22 @@
-title: RA_2202_collect_email_message
-id: RA2202
-description: Collect an email message
-author: '@atc_project'
-creation_date: 2019/01/31
+title: RA20001.Get File Details // Longer TItle
+id: RA20001
+description: Get some basic details about a file, such as where it ran from, its name, file hash etc. //An explanation of what this Response Method is for
+author: 'Martin Connarty'
+creation_date: 2023/03/09
 stage: identification
 references: 
-  - https://www.lifewire.com/save-an-email-as-an-eml-file-in-gmail-1171956
-  - https://eml.tooutlook.com/
+response_methods:  // A full list of all the methods available
+- RM20001_Splunk
+- RM20001_Windows
+- RM20001_Linux
+
 workflow: |
-  Collect an email message using the most appropriate option:  
-
-  - Email Team/Email server: if there is such option  
-  - The person that reported the attack (if it wasn't detected automatically or reported by victims)  
-  - Victims: if they reported the attack  
-  - Following the local computer forensic evidence collection procedure, if the situation requires it
-
-  Ask for the email in `.EML` format. Instructions:  
-
-    1. Drug and drop email from Email client to Desktop  
-    2. Archive with password "infected" and send to IR specialists by email  
-
+    1. Get the file name and file path and (if logs support, the file hash)
+      - RM2000001_[Technology] // When running the script, if a user provides the technologies in use then these can be auto-populated accordingly
+    2. (Optional) Generate the file hash if access the the box is safe/not going to ruin forensics:
+      - RM2000002_[Technology]
+    3. Check if the file is signed and who by
+      - RM2000003_[Technology]
+    4. Check the file created, modified, and accessed dates 
+      - RM2000004_[Technology]
+   
