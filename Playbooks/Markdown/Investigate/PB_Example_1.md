@@ -27,7 +27,7 @@ When looking at this, your goal is to first verify the detection has worked accu
 
 - Review the detection logic and confirm it has worked as designed [RP_2000_Understand_Detection_Logic](RP_2000_Understand_Detection_Logic)
 - Try to gather details of the DLL file that was loaded 
-    - [RA_20001_Gather_File_details](../../../ResponseActions/Investigate/RA_20001_Gather_File_details)
+    - [RA_20001_Gather_File_details](../../../ResponseActions/Markdown/Investigate/RA_Example.md)
 - Understand the DLL and triage the file [RA_20002_Triage_Binary](RA_20002_Triage_Binary) and if necessary analyse it [RA_20003_Analyse_Binary](RA_20003_Analyse_Binary). 
 - Look for suspicious behaviour from the hijacked executable based on what you've learned about the DLL or what you know about normal use for that executable. E.g. commands, processes or network connections you might not expect.
     - [RA_20006_Check_Child_Commands](RA_20006_Check_Child_Commands)
