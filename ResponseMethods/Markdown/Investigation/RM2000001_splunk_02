@@ -1,0 +1,23 @@
+# RM2000001 - Get File Details - Splunk - Inline Data Model
+
+| ID | RM2000001_splunk_02 |
+|---|---|
+| Author | Martin Connarty |
+| Created Date | 2023/03/09 |
+| Severity | M |
+| TLP | AMBER |
+| PAP | WHITE |
+
+## Links
+
+## Description
+
+Use Splunk Data Model to gather the file details
+
+## Type
+
+- In Line Script
+    
+## Method
+
+``` | tstats count from datamodel=Endpoint by Endpoint.filename, Endpoint.filehash, Endpoint.filepath ```
