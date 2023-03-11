@@ -1,0 +1,12 @@
+title: RM2000001 - Get File Details - Splunk - Manual
+id: RM2000001_splunk
+description: Show a file Details in Splunk manually
+author: martin connarty
+creation_date: 2023/03/07
+stage: identification
+references:
+  - null
+type: manual
+method: >
+  If file name is unknown, look at the host in question at the time of the
+  firing. The File name should be stored as 'FileName / File_Name'
