@@ -1,5 +1,3 @@
-script: >
-  
 title: RM2000001 - Get File Details - Splunk - Inline
 id: RM2000001_splunk
 description: Show a file Details in Splunk using Inline Scripts
@@ -10,10 +8,12 @@ references:
   - null
 type: inline
 methods:
-  - Get from CIM Endpoint model in splunk
-  - >
+-
+  title: Get from CIM Endpoint model in splunk
+  method: >
       `Cim_Endpoint_Indexes` | eval File_Name=coalesce(File_Name, FileName) |
       table _time File_Name
-  - Get from Data model in splunk
-  - >
+-
+  title: Get from Data model in splunk
+  method: >
     | tstats count from datamodel=Endpoint by ....
