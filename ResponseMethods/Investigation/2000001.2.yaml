@@ -1,0 +1,8 @@
+script: >
+  - Get from CIM Endpoint model in splunk
+  - >
+    `Cim_Endpoint_Indexes` | eval File_Name=coalesce(File_Name, FileName) |
+    table _time File_Name
+  - Get from Data model in splunk
+  - >
+    | tstats count from datamodel=Endpoint by ....
